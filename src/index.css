@@ -1,0 +1,18 @@
+:root {
+  --primary: #4B69FD;
+  --secundary-black: #000;
+  --secundary-orange: #FE652B;
+  --terciary: #FFF9EB;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary);
+  border: 2px solid #000;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
