@@ -76,7 +76,7 @@ describe('o comportamento do formulário', () => {
         });
         fireEvent.click(botao);
       
-        const mensagemDeErro = screen.getByRole("alerta");
+        const mensagemDeErro = screen.getByRole("alert");
         expect(mensagemDeErro.textContent).toBe(
           "Nomes duplicados não são permitidos!"
         );
@@ -106,14 +106,14 @@ describe('o comportamento do formulário', () => {
         });
         fireEvent.click(botao);
       
-        let mensagemDeErro = screen.queryByRole("alerta");
+        let mensagemDeErro = screen.queryByRole("alert");
         expect(mensagemDeErro).toBeInTheDocument();
       
         act(() => {
           jest.runAllTimers();
         });
       
-        mensagemDeErro = screen.queryByRole("alerta");
+        mensagemDeErro = screen.queryByRole("alert");
         expect(mensagemDeErro).toBeNull();
       });
 })

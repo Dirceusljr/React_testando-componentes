@@ -1,0 +1,11 @@
+.card {
+    background: var(--terciary);
+    border-radius: 64px 64px 0px 0px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    padding: 80px;
+    display: flex;
+    flex: 1;
+    margin-top: -32px;
+    justify-content: center;
+}
